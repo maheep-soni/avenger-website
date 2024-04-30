@@ -1,0 +1,264 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+    transition: all 0.5s linear;
+ 
+}
+body{
+    background-color: black;
+}
+header{
+    /* width: 100%; */
+    height: 100vh;
+}
+span{
+    color: red;
+}
+.logo{
+    color: white;
+    font-family:fantasy;
+  /* border: 2px solid red;
+  padding: 0.5rem; */
+
+}
+.navbar{
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+}
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /* position: sticky;
+    z-index: 9999; */
+    position: absolute;
+    z-index: 1;
+    font-size: 1.5rem;
+    font-family:fantasy;
+
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1.5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(252, 249, 249);
+}
+nav ul li a:hover{
+    color: red;
+    border-bottom: 1px solid white;
+    transition: 0.5s;
+}
+.home{
+    width: 100%;
+   
+}
+.home_image img{
+    width: 100%;
+    height: auto;
+   /* z-index: 2; */
+   position: absolute;
+   z-index: 0;
+}
+.home_text{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    color:#fff;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    font-size: x-large;
+    font-family: sans-serif;
+    /* top: 50%; 
+     position: absolute;
+    z-index: 1;
+    color: white;
+    top: 50%;
+    /* left: 50%; */
+    /* text-align: center;
+    font-size: xx-large; */
+    /* transform: translate(-50%, -50%); 
+    font-style: italic */
+}
+button{
+    border: none;
+    color: white;
+    background-color: red;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 1rem;
+}
+button:hover{
+    background-color: rgb(167, 7, 7);
+    transition: 0.6s;
+}
+.home_text h1{
+    color: red;
+}
+.about h2{
+    color:red;
+    text-align: center;
+    margin: 1rem;
+    font-family:fantasy;
+
+}
+.card h1, .team h1,.about h1, .contact h1{
+    color:red;
+    text-align: center;
+    /* padding: 1rem; */
+    font-family:fantasy;
+    background-color: black;
+    border-top:1px solid red ;
+    border-bottom:1px solid red ;
+    font-family:fantasy;
+
+}
+.about{
+    background-color: #080808;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 2rem;
+}
+.about img{
+    width: 50%;
+    padding: 1rem;
+
+}
+.text_on{
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+}
+.about p{
+    color: white;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+.wrapper{
+    display: flex;
+}
+.card_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color: black;
+    gap: 0.5rem;
+    padding: 1rem;
+    position: relative;
+
+}
+.textbox{
+    position: relative;
+    overflow: hidden;
+}
+.textbox img{
+    width: 100%;
+    height: 100%;
+    /* padding: 1rem; */
+}
+.content_card{
+    position: absolute;
+    color: white;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.textbox:hover .content_card{
+    transform: translateY(0%);
+}
+
+.textbox:hover img{
+    transform: translateY(-100%);
+}
+
+/* .content_card{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  
+    opacity: 0;
+    transition: 0.6s;
+} */
+/* .content_card:hover{
+    opacity: 1;
+    background-color: black;
+} */
+
+.ourteam{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+}
+.ourteam img{
+    width: 20%;
+    height: 30%;
+    /* height: 50%; */
+    /* height: 100%; */
+    padding: 4rem 0;
+
+}
+/* .cardsss{
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+} */
+.contact{
+    width: 100%;
+    padding: 3rem;
+}
+.contactcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactcontainer img{
+    width: 65%;
+    padding: 2rem;
+    
+}
+.detail_form{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+ 
+}
+.detail_form input,textarea{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 15px ;
+    background-color: #412a2a;
+    color: white;
+    border-radius: 2px;
+    border: none;
+}
+.div{
+    color:red;
+    border-top:1px solid red ;
+    padding: 1rem;
+    text-align: center;
+}
