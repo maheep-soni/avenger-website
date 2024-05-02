@@ -62,6 +62,9 @@ nav ul li a{
     text-decoration: none;
     color: rgb(252, 249, 249);
 }
+nav ul li :visited{
+    color: rgb(27, 175, 212);
+}
 nav ul li a:hover{
     color: red;
     border-bottom: 1px solid white;
