@@ -10,6 +10,19 @@ header{
     /* width: 100%; */
     height: 100vh;
 }
+/* .wrappper_container{
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+    transition: opacity 0.2s, visibility 1s;
+}
+.fade{
+    opacity: 0;
+    visibility: hidden;
+} */
 span{
     color: red;
 }
@@ -42,6 +55,8 @@ nav ul {
     display: flex;
     list-style-type: none;
     gap: 1.5rem;
+    /* text-decoration: underline; */
+
 }
 nav ul li a{
     text-decoration: none;
